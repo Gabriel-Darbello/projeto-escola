@@ -1,0 +1,81 @@
+/* Estilos Globais */body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+
+/* Contêiner das Seções */.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start; /* Alinha os itens no topo */
+}
+
+/* Estilo das Divs */div {
+    width: 300px; /* Largura fixa */min-height: 250px; /* Altura mínima fixa */margin: 20px;
+    padding: 20px;
+    background-color: #ffffff; /* Fundo branco */border-radius: 10px;
+    box-shadow: 08px20pxrgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Estilo dos Títulos */h1 {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+    border-bottom: 2px solid aqua;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%; /* Garante que o título ocupe toda a largura da div */box-sizing: border-box;
+}
+
+/* Estilo do Título da Seção O que faz? */.OqueFazh1 {
+    color: aqua; /* Cor verde para destacar o título */
+}
+
+/* Estilo dos Parágrafos */p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Estilo das Listas */ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ulli {
+    margin-bottom: 12px;
+    padding-left: 25px;
+    position: relative;
+    font-size: 16px;
+}
+
+ulli:before {
+    content: "➤";
+    position: absolute;
+    left: 0;
+    color: aqua;
+    font-size: 20px;
+    line-height: 0;
+}
+
+/* Hover Effect para Divs */div:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease-in-out;
+}

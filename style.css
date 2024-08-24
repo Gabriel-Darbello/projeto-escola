@@ -1,0 +1,71 @@
+/* Estilos Globais */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  height: 100vh; /* Ocupa toda a altura da tela */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 20px 0;
+  flex-shrink: 0; /* Garante que o header não encolha */
+}
+
+h1{
+  text-transform: uppercase;
+  font-size: 50px;
+}
+
+/* Contêiner Flexível */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Alinha os itens horizontalmente ao centro */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  padding: 20px;
+  box-sizing: border-box;
+  flex-grow: 1; /* O container ocupa o espaço restante */
+  max-width: 1000px; /* Limita a largura máxima do container */
+  margin: 0 auto; /* Centraliza o container horizontalmente */
+  align-content: center; /* Centraliza as linhas verticalmente */
+}
+
+/* Blocos Individuais */
+.bloco {
+  flex: 1 1 400px; /* Flexível com largura mínima de 200px */
+  max-width: 400px;
+  margin: 10px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.bloco img {
+  width: 100%; /* Imagem ocupa 100% da largura do bloco */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.bloco img:hover {
+  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+  .bloco {
+      flex: 1 1 45%; /* Dois blocos por linha em tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .bloco {
+      flex: 1 1 100%; /* Um bloco por linha em dispositivos móveis */
+  }
+}

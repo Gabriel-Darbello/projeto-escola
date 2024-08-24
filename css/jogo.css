@@ -1,0 +1,72 @@
+/* Estilos Globais */body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+
+/* Estilo dos Títulos */h1 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 15px;
+    border-bottom: 2px solid orange;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+/* Estilo dos Parágrafos */p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Estilo das Divs */div {
+    width: 300px; /* Largura fixa */height: 250px; /* Altura fixa */margin: 20px;
+    padding: 20px;
+    background-color: #ffffff; /* Fundo branco */border-radius: 10px;
+    box-shadow: 08px20pxrgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilo das Listas */ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ulli {
+    margin-bottom: 12px;
+    padding-left: 25px;
+    position: relative;
+    font-size: 16px;
+}
+
+ulli:before {
+    content: "➤";
+    position: absolute;
+    left: 0;
+    color: #007BFF;
+    font-size: 20px;
+    line-height: 0;
+}
+
+/* Hover Effect para Divs */div:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Ajustes Específicos para as Seções */.OqueFaz, .Salario, .Formação, .Vantagens {
+    flex: 10300px;
+    max-width: 300px;
+    box-sizing: border-box;
+}
